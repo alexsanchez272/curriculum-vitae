@@ -1,0 +1,6 @@
+<aside class="aside-info">
+	<div class="aside-info__container" *ngFor="let asideInfo of allAsideInfo">
+		<h4 class="aside-info__title sideTitle">{{ asideInfo.title }}</h4>
+		<p class="aside-info__items" *ngFor="let text of asideInfo.texts">{{ text }}</p>
+	</div>
+</aside>

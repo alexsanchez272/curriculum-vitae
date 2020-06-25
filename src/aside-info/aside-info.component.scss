@@ -1,0 +1,35 @@
+@import '../../node_modules/bootstrap/scss/functions';
+@import '../../node_modules/bootstrap/scss/variables';
+@import '../../node_modules/bootstrap/scss/mixins';
+@import '../variables.scss';
+
+.aside-info {
+	display: none;
+	&__container {
+	}
+
+	&__title {
+	}
+}
+
+@include media-breakpoint-up(sm) {
+}
+
+@include media-breakpoint-up(md) {
+	.aside-info {
+		display: block;
+		&__container {
+			margin-bottom: 20%;
+			padding-right: 5%;
+		}
+
+		&__title {
+		}
+	}
+}
+
+@include media-breakpoint-up(lg) {
+}
+
+@include media-breakpoint-up(xl) {
+}

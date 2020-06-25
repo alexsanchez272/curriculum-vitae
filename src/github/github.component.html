@@ -1,0 +1,19 @@
+<div class="github widthContainer">
+	<div *ngFor="let githubInfo of shortGithubInfo" class="repo">
+		<h3 class="repo__NameLanguage">
+			<span class="repo__name repoName">{{ githubInfo.name }}</span>
+			<span class="repo__language">
+				<img
+					src="{{ baseUrl }}assets/images/languages/{{
+						githubInfo.language | lowercase
+					}}.png"
+					alt="{{ githubInfo.language | lowercase }}"
+				/>
+			</span>
+		</h3>
+		<p class="repo__description">{{ githubInfo.description }}</p>
+		<div>
+			<a class="repo__link" href="{{ githubInfo.url }}">Visit me >>></a>
+		</div>
+	</div>
+</div>

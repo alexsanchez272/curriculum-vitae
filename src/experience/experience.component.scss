@@ -1,0 +1,48 @@
+@import '../../node_modules/bootstrap/scss/functions';
+@import '../../node_modules/bootstrap/scss/variables';
+@import '../../node_modules/bootstrap/scss/mixins';
+@import '../variables.scss';
+
+.experience {
+	padding: 2% 7% 7% 7%;
+	&__h3 {
+		font-weight: 700;
+		font-size: 1.2em;
+	}
+
+	&__date {
+		color: $orangeApp;
+		font-size: 1em;
+		font-weight: bold;
+		text-transform: uppercase;
+	}
+
+	&__text {
+	}
+}
+
+@media (min-width: $smallMedium) {
+	.experience {
+		margin-bottom: 12%;
+		&__h3 {
+		}
+
+		&__date {
+		}
+
+		&__text {
+		}
+	}
+}
+
+@include media-breakpoint-up(sm) {
+}
+
+@include media-breakpoint-up(md) {
+}
+
+@include media-breakpoint-up(lg) {
+}
+
+@include media-breakpoint-up(xl) {
+}

@@ -1,0 +1,18 @@
+[
+	{
+		"title": "Skills",
+		"texts": ["Always looking for new things to learn", "Constant", "Adaptability"]
+	},
+	{
+		"title": "Interest",
+		"texts": [
+			"Clean code",
+			"Testing",
+			"Any way that could improve software development process"
+		]
+	},
+	{
+		"title": "Languages",
+		"texts": ["Spanish (native)", "Galician (native)", "English (B1 – B2)", "French (A2)"]
+	}
+]

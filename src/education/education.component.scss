@@ -1,0 +1,29 @@
+@import '../../node_modules/bootstrap/scss/functions';
+@import '../../node_modules/bootstrap/scss/variables';
+@import '../../node_modules/bootstrap/scss/mixins';
+@import '../variables.scss';
+
+.education {
+	padding: 0 7%;
+	font-size: $fontSizeEducation;
+
+	&__p {
+	}
+
+	&__date {
+		color: $orangeApp;
+		font-weight: 700;
+	}
+}
+
+@include media-breakpoint-up(sm) {
+}
+
+@include media-breakpoint-up(md) {
+}
+
+@include media-breakpoint-up(lg) {
+}
+
+@include media-breakpoint-up(xl) {
+}

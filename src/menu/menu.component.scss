@@ -1,0 +1,99 @@
+@import '../../node_modules/bootstrap/scss/functions';
+@import '../../node_modules/bootstrap/scss/variables';
+@import '../../node_modules/bootstrap/scss/mixins';
+@import '../variables.scss';
+
+.menu {
+	margin-bottom: 8%;
+	&__li {
+		border-right: 1px black solid;
+		&:last-of-type {
+			border-right: 0px;
+		}
+	}
+
+	&__a {
+		color: black !important;
+		font-weight: 700;
+		&--active {
+			position: relative;
+
+			&::after {
+				position: absolute;
+				height: 0;
+				width: 0;
+				border-bottom: 8px solid black;
+				border-left: 10px solid transparent;
+				border-right: 10px solid transparent;
+				left: 45%;
+				bottom: -5px;
+				content: '';
+			}
+		}
+	}
+}
+
+@media (min-width: $smallMedium) {
+	.menu {
+		margin-bottom: 8%;
+		&__li {
+			&:last-of-type {
+			}
+		}
+
+		&__a {
+			font-size: 1.2em;
+			&--active {
+			}
+		}
+	}
+}
+
+@include media-breakpoint-up(sm) {
+}
+
+@include media-breakpoint-up(md) {
+	.menu {
+		&__li {
+			&:last-of-type {
+			}
+		}
+
+		&__a {
+			font-size: 1em;
+			&--active {
+			}
+		}
+	}
+}
+
+@include media-breakpoint-up(lg) {
+	.menu {
+		&__li {
+			&:last-of-type {
+			}
+		}
+
+		&__a {
+			font-size: 1.3em;
+			&--active {
+			}
+		}
+	}
+}
+
+@include media-breakpoint-up(xl) {
+	.menu {
+		margin-top: -8%;
+		&__li {
+			&:last-of-type {
+			}
+		}
+
+		&__a {
+			font-size: 1.4em;
+			&--active {
+			}
+		}
+	}
+}

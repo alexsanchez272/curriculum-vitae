@@ -1,0 +1,23 @@
+/* You can add global styles to this file, and also import other style files */
+@import './variables.scss';
+
+a {
+	color: black;
+
+	&:visited {
+		color: black !important;
+	}
+}
+
+.sideTitle {
+	color: $orangeApp;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 0.9em;
+}
+
+@media (min-width: $smallMedium) {
+	.widthContainer {
+		padding: 0 !important;
+	}
+}

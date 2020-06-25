@@ -1,0 +1,7 @@
+<main>
+	<div class="experience widthContainer" *ngFor="let experience of experiences">
+		<h3 class="experience__h3">{{ experience.company }}</h3>
+		<p class="experience__date">{{ experience.date }}</p>
+		<p class="experience__text" *ngFor="let text of experience.texts">{{ text }}</p>
+	</div>
+</main>

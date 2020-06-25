@@ -1,0 +1,77 @@
+@import '../../node_modules/bootstrap/scss/functions';
+@import '../../node_modules/bootstrap/scss/variables';
+@import '../../node_modules/bootstrap/scss/mixins';
+@import '../variables.scss';
+
+.social {
+	display: none;
+
+	&__icon {
+		img {
+		}
+	}
+
+	&__social__linkMail {
+	}
+}
+
+@include media-breakpoint-up(sm) {
+}
+
+@media (min-width: $smallMedium) {
+	.social {
+		display: block;
+		&__icon {
+			display: inline;
+
+			&:nth-child(3) {
+				padding-left: 15px;
+			}
+
+			img {
+				width: 45px;
+			}
+		}
+
+		&__title {
+			margin-bottom: 15px;
+		}
+
+		&__email {
+			margin-top: 35px;
+		}
+
+		&__linkMail {
+			font-size: 0.8em;
+			color: #111111;
+			font-weight: 500;
+			font-style: italic;
+			text-decoration: underline;
+		}
+	}
+}
+
+@include media-breakpoint-up(md) {
+}
+
+@include media-breakpoint-up(lg) {
+	.social {
+		&__icon {
+			& img {
+			}
+		}
+
+		&__email {
+			p {
+				padding-right: 50px;
+			}
+		}
+
+		&__linkMail {
+			font-size: 1em;
+		}
+	}
+}
+
+@include media-breakpoint-up(xl) {
+}

@@ -1,0 +1,34 @@
+[
+	{
+		"company": "Quobis S.L.U. - Backend developer",
+		"date": "June 2016 - Now",
+		"texts": [
+			"Working in the development of backend services using mainly technologies like Javascript/Typescript over Node.js, mongoDB and RabbitMQ. As well, I have been working with Angular in frontend part. Use of Docker when using it in development and knowlegde of Asterisk server as requirement of the company product.",
+			"I gained experience in TDD (Test Driven Development) and DDD (Domain Driven Design)",
+			"I have been responsible for mentoring new colleagues for a year."
+		]
+	},
+	{
+		"company": "Seresco S.A. - Backend Developer",
+		"date": "Septembre 2015 - June 2016",
+		"texts": [
+			"As backend developer in this company, in charge of adding new features to an application web of an important client for the company.",
+			"Even though the development was mainly with PHP (Zend Framework) and MySQL, this role allowed me to improve my knowledge in HTML5, CSS3 and Javascript. Moreover, I’ve promoted testing practice between my dev team."
+		]
+	},
+	{
+		"company": "Gluumiim S.L. – FullStack Developer",
+		"date": "Abril 2014 - Agosto 2015",
+		"texts": [
+			"Working in the development of several application webs for this startup with technologies like PHP (CodeIgniter framework), MySQL and HTML5/CSS3/Javascript.",
+			"In addition, I have been in charge of creating differents internal apps to improve the productivity of other workers in the company."
+		]
+	},
+	{
+		"company": "Codisoil S.A. - FullStack Developer",
+		"date": "August 2012 - February 2014",
+		"texts": [
+			"Developing different webs and an online shop that were focused on getting great results on the search engines (SEO). All that work was done during my internship in this company."
+		]
+	}
+]
