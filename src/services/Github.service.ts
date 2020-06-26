@@ -3,6 +3,8 @@ import { HttpClient } from '@angular/common/http';
 import { HttpHeaders } from '@angular/common/http';
 import ShortGithubInfo from 'src/types/ShortGithubInfo';
 import GithubRepoData from 'src/types/GithubRepoData';
+import GithubProfileData from 'src/types/GithubProfileData';
+import ShortGithubProfile from 'src/types/ShortGithubProfile';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 
@@ -26,6 +28,12 @@ export class GithubService {
 		return this.httpClient
 			.get(this.composeUrl(`users/${user}/repos`), httpOptions)
 			.pipe(map(this.convertToShortGithub.bind(this)), map(this.sortByUpdate.bind(this)));
+	}
+
+	public getShortProfileInfo(): Observable<ShortGithubProfile> {
+		return this.httpClient
+			.get(this.composeUrl(`users/${user}`), httpOptions)
+			.pipe(map(this.toShortGithubProfile.bind(this)));
 	}
 
 	private composeUrl(endpoint: string): string {
@@ -55,6 +63,13 @@ export class GithubService {
 			updatedAt: data.updated_at,
 			language: data.language,
 			url: data.html_url,
+		};
+	}
+
+	private toShortGithubProfile(data: GithubProfileData): ShortGithubProfile{
+		return{
+			avatarUrl: data.avatar_url,
+			name: data.name,
 		};
 	}
 }

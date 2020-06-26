@@ -1,20 +1,42 @@
 <header class="header container">
 	<div class="row">
-		<figure class="header__photo col-md-4 col-lg-2">
-			<a routerLink="/"
-				><img
-					class="header__photo__img"
-					src="{{ baseUrl }}assets/rubengglez.jpg"
-					alt="rubengglez's photo"
-			/></a>
-		</figure>
-		<div class="header__description col-md-8 col-lg-10">
-			<h1 class="header__name">Rubén García González</h1>
-			<h2 class="header__summary">Software engineer && enthusiastic person</h2>
-		</div>
+		<!--This section reads the information from Github if it exists or local if not-->
+		<div
+			*ngIf="
+				shortGithubProfile.avatarUrl != null && shortGithubProfile.name != null;
+				then githubProfile;
+				else localProfile
+			"
+		></div>
+
+		<ng-template #githubProfile>
+			<figure class="header__photo col-md-4 col-lg-2">
+				<a routerLink="/"
+					><img
+						class="header__photo__img"
+						src="{{ shortGithubProfile.avatarUrl }}"
+						alt="profile's photo"
+				/></a>
+			</figure>
+
+			<div class="header__description col-md-8 col-lg-10">
+				<h1 class="header__name">{{ shortGithubProfile.name }}</h1>
+				<h2 class="header__summary">Software engineer && enthusiastic person</h2>
+			</div>
+		</ng-template>
+		<ng-template #localProfile>
+			<figure class="header__photo col-md-4 col-lg-2">
+				<a routerLink="/"
+					><img
+						class="header__photo__img"
+						src="{{ baseUrl }}assets/profile.jpg"
+						alt="profile's photo"
+				/></a>
+			</figure>
+		</ng-template>
 	</div>
 	<div class="row container">
-		<div class="header__fulldescription col-md-12 widthContainer ">
+		<div class="header__fulldescription col-md-12 widthContainer">
 			<p>
 				As good code, ready to accept the change. I like to learn new things every day,
 				listener of technology podcasts and appassionate reader of IT books. Worried about
